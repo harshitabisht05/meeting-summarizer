@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+
+@font-face {
+  font-family: 'Eurostile';
+  src: url('/fonts/Eurostile-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Condensed';
+  src: url('/fonts/Condensed-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -21,7 +35,6 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -41,4 +54,12 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.heading-euro {
+  font-family: var(--font-eurostile);
+}
+
+.text-manrope {
+  font-family: var(--font-manrope);
 }

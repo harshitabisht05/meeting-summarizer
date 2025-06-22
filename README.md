@@ -1,15 +1,23 @@
 # Meeting Summarizer
-## Getting Started
+## 💻 Getting Started
 
-First, run the development server:
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/harshitabisht05/meeting-summarizer.git
+cd meeting-summarizer
+```
+### 2. Install Dependencies
 
 ```bash
 npm install
+```
+### 3. Start the Dev Server
+```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
+Visit [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 # Pages to Build
@@ -61,7 +69,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 | Element            | Purpose                                             |
 | ------------------ | --------------------------------------------------- |
 | **File input**     | Select an audio file (e.g., `.mp3`, `.wav`, `.m4a`) |
-| **Upload button**  | Sends the file to FastAPI `/file/upload`            |
+| **Upload button**  | Sends the file           |
 | **Validation**     | Show error for unsupported formats                  |
 | **Status message** | Show success or error feedback                      |
 
@@ -131,6 +139,24 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### TASK:
 
-- Login, register, navbar (ojaswee)
-- upload page, footer (paridhi)
-- dashboard transcribe (harshita)
+- Login, register, navbar,footer (ojaswee)
+- upload page ,dashboard(paridhi)
+- home page, transcribe, API Integration (harshita)
+
+(If intalling anything extra do mention it on README.md file)
+
+### Font:
+
+- For Heading use Eurostile font like:
+```bash
+<h1 style={{ fontFamily: "var(--font-eurostile)" }} className="text-4xl font-bold">
+This is Eurostile
+</h1>
+```
+
+- For other use Manrope font like:
+```bash
+<p style={{ fontFamily: "var(--font-manrope)" }} className="text-lg mt-4">
+This is Manrope - modern and clean.
+</p>
+```
