@@ -68,7 +68,7 @@ Visit [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 | Element            | Purpose                                             |
 | ------------------ | --------------------------------------------------- |
-| **File input**     | Select an audio file (e.g., `.mp3`, `.wav`, `.m4a`) |
+| **File input**     | Select an audio file (e.g., `.mp3`, `.wav`) |
 | **Upload button**  | Sends the file           |
 | **Validation**     | Show error for unsupported formats                  |
 | **Status message** | Show success or error feedback                      |
@@ -139,7 +139,7 @@ Visit [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### TASK:
 
-- Login, register, navbar,footer (ojaswee)
+- Login, register, navbar [augen.pro](https://augen.pro/) or [castify-free](https://castify-free.webflow.io/) ,footer (ojaswee)
 - upload page ,dashboard(paridhi)
 - home page, transcribe, API Integration (harshita)
 
@@ -147,14 +147,14 @@ Visit [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Font:
 
-- For Heading use Eurostile font like:
+- Eurostile font like:
 ```bash
 <h1 style={{ fontFamily: "var(--font-eurostile)" }} className="text-4xl font-bold">
 This is Eurostile
 </h1>
 ```
 
-- For other use Manrope font like:
+- Manrope font like:
 ```bash
 <p style={{ fontFamily: "var(--font-manrope)" }} className="text-lg mt-4">
 This is Manrope - modern and clean.
