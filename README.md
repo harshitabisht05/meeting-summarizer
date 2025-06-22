@@ -11,6 +11,8 @@ cd meeting-summarizer
 
 ```bash
 npm install
+npm install lucide-react
+npm install frame-react
 ```
 ### 3. Start the Dev Server
 ```bash
