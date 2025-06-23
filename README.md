@@ -11,6 +11,10 @@ cd meeting-summarizer
 
 ```bash
 npm install
+npm install swiper
+npm install lucide-react
+npm install framer-motion
+
 ```
 ### 3. Start the Dev Server
 ```bash
