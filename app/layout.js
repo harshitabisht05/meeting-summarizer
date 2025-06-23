@@ -1,5 +1,8 @@
 import "./globals.css";
 import localFont from "next/font/local";
+import React from "react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 // Register Eurostile
 const eurostile = localFont({
@@ -21,8 +24,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+
       <body className={`${eurostile.variable} ${manrope.variable}`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
