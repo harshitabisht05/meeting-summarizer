@@ -1,6 +1,5 @@
 'use client';
 
-import Navbar from './components/Navbar';
 import { useRouter } from 'next/navigation';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -8,7 +7,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-
 
 const features = [
   {
@@ -48,7 +46,9 @@ export default function HomePage() {
 
   return (
     <>
+      
       <div className="relative min-h-screen w-full overflow-hidden">
+
         {/* 🔵 Background Video */}
         <video
           autoPlay
@@ -121,12 +121,12 @@ export default function HomePage() {
             spaceBetween={30}
             centeredSlides={true}
             pagination={{ clickable: true }}
-            slideToClickedSlide={true} // 👈 click-to-slide enabled
+            slideToClickedSlide={true}
             autoplay={{
-              delay: 1000, // 1 seconds
-              disableOnInteraction: false, // keep autoplay after manual swipe
+              delay: 1000, 
+              disableOnInteraction: false, 
             }}
-            modules={[Pagination, Autoplay]} // 👈 include Autoplay
+            modules={[Pagination, Autoplay]}
             className="w-full max-w-6xl"
             breakpoints={{
               768: { slidesPerView: 1.6 },
@@ -188,8 +188,6 @@ export default function HomePage() {
 </div>
 
       </div>
-
-
       </section>
 
       </>

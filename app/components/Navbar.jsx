@@ -51,6 +51,7 @@ export default function Navbar() {
   return (
     <nav
       className={`sticky top-0 z-50 py-4 px-6 flex items-center justify-between transition-all duration-300 ${
+
         isScrolled
           ? "bg-white/90 backdrop-blur-md shadow-md"
           : "bg-transparent"
@@ -59,6 +60,7 @@ export default function Navbar() {
       {/* Logo */}
       <Link href="/" className="flex items-center gap-3">
         <img src="/images/logo.jpg" alt="Logo" className="h-8 w-auto" />
+
         <span
           style={{ fontFamily: "var(--font-eurostile)" }}
           className="text-2xl font-bold text-blue-800"
@@ -69,6 +71,7 @@ export default function Navbar() {
 
       {/* Centered pill menu bar */}
       <div className="mx-auto flex bg-white/80 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-full overflow-hidden shadow-md backdrop-blur-sm text-sm font-medium">
+
         {menuItems.map(({ href, label }) => (
           <Link
             key={href}
@@ -84,6 +87,7 @@ export default function Navbar() {
             <span className="group-hover:underline underline-offset-4 transition duration-300">
               {label}
             </span>
+
           </Link>
         ))}
 
@@ -91,6 +95,7 @@ export default function Navbar() {
           <button
             onClick={handleLogout}
             className="px-6 py-2 text-red-600 hover:bg-red-100 dark:hover:bg-red-900 transition-all duration-300"
+
           >
             Logout
           </button>
@@ -98,4 +103,5 @@ export default function Navbar() {
       </div>
     </nav>
   );
+
 }

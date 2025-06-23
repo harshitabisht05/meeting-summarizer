@@ -3,8 +3,7 @@ import localFont from "next/font/local";
 import React from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import LoginPage from "./login/page";
-import RegisterPage from "./register/page";
+
 
 // Register Eurostile font
 const eurostile = localFont({
@@ -25,17 +24,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${eurostile.variable} ${manrope.variable}`}>
-      <head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
-      <body className="bg-gray-50 text-gray-900">
+
+    <html lang="en">
+
+      <body className={`${eurostile.variable} ${manrope.variable}`}>
         <Navbar />
-        <main className="min-h-screen">
-          <div className="container mx-auto px-4 py-8">{children}</div>
-        </main>
+        {children}
         <Footer />
       </body>
     </html>
