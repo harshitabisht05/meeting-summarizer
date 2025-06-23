@@ -23,7 +23,7 @@ export default function RegisterPage() {
         loop
         className="absolute inset-0 w-full h-full object-cover z-0 brightness-50"
       >
-        <source src="/images/rain-glass.mp4" type="video/mp4" />
+        <source src="/images/background.mp4" type="video/mp4" />
       </video>
 
       <div className="relative z-10 max-w-md w-full bg-white/20 backdrop-blur-md p-8 rounded-xl shadow-xl animate-fade-in">

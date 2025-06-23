@@ -6,10 +6,10 @@ export default function Footer() {
       </p>
       <div className="flex justify-center gap-4 mt-2">
         <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-          <img src="/icons/linkedin.svg" className="h-5" />
+          <img src="/images/linkedin.png" className="h-5" />
         </a>
         <a href="https://github.com" target="_blank" rel="noreferrer">
-          <img src="/icons/github.svg" className="h-5" />
+          <img src="/images/github.png" className="h-5" />
         </a>
       </div>
     </footer>
